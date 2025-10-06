@@ -1,6 +1,6 @@
 ---
 import { Header } from "@/components/header";
-import { BookOpen, Cpu, Users } from "lucide-react";
+import { BookOpen, Cpu, Users, FlaskConical } from "lucide-react";
 import Footer from "@/components/footer.astro";
 import MainLayout from "@/layouts/main.astro";
 ---
@@ -43,15 +43,15 @@ import MainLayout from "@/layouts/main.astro";
                 </p>
                 <ul class="space-y-3 text-muted-foreground">
                   <li class="flex items-start gap-3">
-                    <span class="text-accent mt-1">•</span>
+                    <span class="text-accent">•</span>
                     <span>組織変革のためのナラティブデザイン</span>
                   </li>
                   <li class="flex items-start gap-3">
-                    <span class="text-accent mt-1">•</span>
+                    <span class="text-accent">•</span>
                     <span>未来シナリオの構築とプランニング</span>
                   </li>
                   <li class="flex items-start gap-3">
-                    <span class="text-accent mt-1">•</span>
+                    <span class="text-accent">•</span>
                     <span>ブランドストーリーの創造と展開</span>
                   </li>
                 </ul>
@@ -82,15 +82,15 @@ import MainLayout from "@/layouts/main.astro";
                 </p>
                 <ul class="space-y-3 text-muted-foreground">
                   <li class="flex items-start gap-3">
-                    <span class="text-accent mt-1">•</span>
+                    <span class="text-accent">•</span>
                     <span>AI・機械学習を活用した業務最適化</span>
                   </li>
                   <li class="flex items-start gap-3">
-                    <span class="text-accent mt-1">•</span>
+                    <span class="text-accent">•</span>
                     <span>データ分析とビジネスインテリジェンス</span>
                   </li>
                   <li class="flex items-start gap-3">
-                    <span class="text-accent mt-1">•</span>
+                    <span class="text-accent">•</span>
                     <span>サイバーセキュリティコンサルティング</span>
                   </li>
                 </ul>
@@ -100,7 +100,7 @@ import MainLayout from "@/layouts/main.astro";
         </div>
       </section>
 
-      {/* Organizational Psychology Section */}
+      {/* Psychology Section */}
       <section id="psychology" class="py-20 lg:py-32">
         <div class="container mx-auto px-4 lg:px-8">
           <div class="max-w-6xl mx-auto">
@@ -115,26 +115,69 @@ import MainLayout from "@/layouts/main.astro";
                 </p>
                 <ul class="space-y-3 text-muted-foreground">
                   <li class="flex items-start gap-3">
-                    <span class="text-accent mt-1">•</span>
+                    <span class="text-accent">•</span>
                     <span>組織診断と組織開発コンサルティング</span>
                   </li>
                   <li class="flex items-start gap-3">
-                    <span class="text-accent mt-1">•</span>
+                    <span class="text-accent">•</span>
                     <span>リーダーシップ開発プログラム</span>
                   </li>
                   <li class="flex items-start gap-3">
-                    <span class="text-accent mt-1">•</span>
+                    <span class="text-accent">•</span>
                     <span>チームパフォーマンス向上支援</span>
                   </li>
                 </ul>
               </div>
               <div class="relative aspect-[4/3] bg-muted rounded-lg overflow-hidden">
-                <img src="/organizational-psychology-team-collaboration.jpg" alt="組織心理学事業" class="w-full h-full object-cover" />
+                <img src="/organizational-psychology-team-collaboration.jpg" alt="心理学事業" class="w-full h-full object-cover" />
               </div>
             </div>
           </div>
         </div>
       </section>
+
+      {/* Research Section */}
+      <section id="research" class="py-20 lg:py-32 border-b border-border bg-muted/30">
+        <div class="container mx-auto px-4 lg:px-8">
+          <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+              <div class="order-2 lg:order-1 relative aspect-[4/3] bg-muted rounded-lg overflow-hidden">
+                <img src="/cyber-technology-digital-network.jpg" alt="基礎研究 (R&D)" class="w-full h-full object-cover" />
+              </div>
+              <div class="order-1 lg:order-2">
+                <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-accent/10 mb-6">
+                  <FlaskConical className="w-8 h-8 text-accent" />
+                </div>
+                <h2 class="text-3xl lg:text-4xl font-serif font-light mb-6 tracking-tight">基礎研究 (R&D)</h2>
+                <p class="text-muted-foreground leading-relaxed mb-6">
+                  上記事業を支えるのが、私たちの内部研究機関「空想虚構研究所」です。この研究所では、「存在するとは何か」という根源的な問いを、自らの「非実在の証明」を通じて探求しています。このユニークなアプローチから得られる知見が、他の事業領域における革新的なコンサルティングの源泉となっています。
+                </p>
+                <ul class="space-y-3 text-muted-foreground">
+                  <li class="flex items-start gap-3">
+                    <span class="text-accent">•</span>
+                    <span>存在論的探究と認識論的分析</span>
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <span class="text-accent">•</span>
+                    <span>デジタル空間における存在様態の研究</span>
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <span class="text-accent">•</span>
+                    <span>現実と虚構の相互作用に関するリサーチ</span>
+                  </li>
+                </ul>
+                <p class="text-muted-foreground leading-relaxed mt-6">
+                  🔗 <a href="https://lab.imaginary-void.com" class="text-accent hover:underline">空想虚構研究所の詳細はこちら</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+      
+
 
       {/* Integration Section */}
       <section class="py-20 lg:py-32 bg-primary text-primary-foreground">
