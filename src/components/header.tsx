@@ -1,11 +1,12 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { Menu, X } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export function Header() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  console.log("isMenuOpen", isMenuOpen);
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
@@ -15,23 +16,17 @@ export function Header() {
             <a href="/" className="text-sm font-medium tracking-wide hover:text-muted-foreground transition-colors">
               ホーム
             </a>
-            <a
-              href="/services"
-              className="hidden md:block text-sm font-medium tracking-wide hover:text-muted-foreground transition-colors"
-            >
+            <a href="/services" className="hidden md:block text-sm font-medium tracking-wide hover:text-muted-foreground transition-colors">
               事業内容
             </a>
-            <a
-              href="/about"
-              className="hidden md:block text-sm font-medium tracking-wide hover:text-muted-foreground transition-colors"
-            >
+            <a href="/about" className="hidden md:block text-sm font-medium tracking-wide hover:text-muted-foreground transition-colors">
               企業情報
             </a>
           </div>
 
           <div className="flex items-center gap-4">
             <a
-              href="/contact"
+              href="https://forms.gle/1TabpKmqAPP8nVBa8"
               className="hidden md:block text-sm font-medium tracking-wide hover:text-muted-foreground transition-colors"
             >
               お問い合わせ
@@ -52,15 +47,11 @@ export function Header() {
               >
                 事業内容
               </a>
-              <a
-                href="/about"
-                className="text-sm font-medium tracking-wide hover:text-muted-foreground transition-colors"
-                onClick={() => setIsMenuOpen(false)}
-              >
+              <a href="/about" className="text-sm font-medium tracking-wide hover:text-muted-foreground transition-colors" onClick={() => setIsMenuOpen(false)}>
                 企業情報
               </a>
               <a
-                href="/contact"
+                href="https://forms.gle/1TabpKmqAPP8nVBa8"
                 className="text-sm font-medium tracking-wide hover:text-muted-foreground transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
@@ -71,5 +62,5 @@ export function Header() {
         )}
       </div>
     </header>
-  )
+  );
 }

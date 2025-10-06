@@ -14,9 +14,11 @@ export function CTASection() {
           <p className="text-muted-foreground leading-relaxed mb-8 max-w-2xl mx-auto">
             あなたの組織の課題や目標について、お気軽にご相談ください。 私たちと共に、未来を創造しましょう。
           </p>
-          <Button size="lg" className="group">
-            お問い合わせ
-            <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+          <Button asChild size="lg" className="group">
+            <a href="https://forms.gle/1TabpKmqAPP8nVBa8" target="_blank" rel="noopener noreferrer">
+              お問い合わせ
+              <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+            </a>
           </Button>
         </div>
       </div>
