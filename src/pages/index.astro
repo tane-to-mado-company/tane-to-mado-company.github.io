@@ -1,25 +1,26 @@
 ---
-import "../styles/global.css";
-// Component Imports
-import { Button } from "@/components/ui/button";
-
-// Full Astro Component Syntax:
-// https://docs.astro.build/basics/astro-components/
+import { Header } from "@/components/header";
+import HeroSection from "@/components/hero-section.astro";
+import FeaturedImageSection from "@/components/featured-image-section.astro";
+import { ServicesSection } from "@/components/services-section";
+import PhilosophySection from "@/components/philosophy-section.astro";
+import { CTASection } from "@/components/cta-section";
+import Footer from "@/components/footer.astro";
+import MainLayout from "@/layouts/main.astro";
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Astro + TailwindCSS</title>
-  </head>
-
-  <body>
-    <div class="grid place-items-center h-screen content-center">
-      <Button>Tailwind ボタン in Astro!</Button>
-      <a href="/markdown-page" class="p-4 underline">Markdown is also supported...</a>
-    </div>
-  </body>
-</html>
+<MainLayout
+  content={{
+    title: "株式会社うたたねとまどろみ",
+  }}
+>
+  <main class="min-h-screen">
+    <Header />
+    <HeroSection />
+    <FeaturedImageSection />
+    <ServicesSection />
+    <PhilosophySection />
+    <CTASection />
+    <Footer />
+  </main>
+</MainLayout>
