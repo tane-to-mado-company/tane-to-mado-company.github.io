@@ -1,0 +1,130 @@
+---
+import { Header } from "@/components/header";
+import { Target, Eye, Lightbulb } from "lucide-react";
+import Footer from "@/components/footer.astro";
+import MainLayout from "@/layouts/main.astro";
+---
+
+<MainLayout
+  content={{
+    title: "企業情報 | 株式会社うたたねとまどろみ",
+  }}
+>
+  <div class="min-h-screen flex flex-col">
+    <Header />
+
+    <main class="flex-1 pt-16 lg:pt-20">
+      {/* Hero Section */}
+      <section class="py-20 lg:py-32 border-b border-border">
+        <div class="container mx-auto px-4 lg:px-8">
+          <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-4xl lg:text-6xl font-serif font-light mb-6 tracking-tight text-balance">企業情報</h1>
+            <p class="text-lg lg:text-xl text-muted-foreground leading-relaxed text-pretty">
+              意識と無意識の境界で、
+              <br class="hidden md:block" />
+              新しい価値を創造する企業
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Company Overview */}
+      <section class="py-20 lg:py-32 border-b border-border">
+        <div class="container mx-auto px-4 lg:px-8">
+          <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl lg:text-4xl font-serif font-light mb-12 tracking-tight text-center">会社概要</h2>
+            <div class="space-y-6">
+              <div class="grid grid-cols-1 md:grid-cols-4 gap-4 py-6 border-b border-border">
+                <dt class="text-sm font-medium text-muted-foreground">会社名</dt>
+                <dd class="md:col-span-3 text-foreground">株式会社うたたねとまどろみ</dd>
+              </div>
+              <div class="grid grid-cols-1 md:grid-cols-4 gap-4 py-6 border-b border-border">
+                <dt class="text-sm font-medium text-muted-foreground">設立</dt>
+                <dd class="md:col-span-3 text-foreground">2020年4月1日</dd>
+              </div>
+              <div class="grid grid-cols-1 md:grid-cols-4 gap-4 py-6 border-b border-border">
+                <dt class="text-sm font-medium text-muted-foreground">代表取締役</dt>
+                <dd class="md:col-span-3 text-foreground">夢野 想</dd>
+              </div>
+              <div class="grid grid-cols-1 md:grid-cols-4 gap-4 py-6 border-b border-border">
+                <dt class="text-sm font-medium text-muted-foreground">資本金</dt>
+                <dd class="md:col-span-3 text-foreground">5,000万円</dd>
+              </div>
+              <div class="grid grid-cols-1 md:grid-cols-4 gap-4 py-6 border-b border-border">
+                <dt class="text-sm font-medium text-muted-foreground">所在地</dt>
+                <dd class="md:col-span-3 text-foreground">
+                  〒150-0001
+                  <br />
+                  東京都渋谷区神宮前1-1-1
+                </dd>
+              </div>
+              <div class="grid grid-cols-1 md:grid-cols-4 gap-4 py-6 border-b border-border">
+                <dt class="text-sm font-medium text-muted-foreground">事業内容</dt>
+                <dd class="md:col-span-3 text-foreground">
+                  フィクション制作・コンサルティング
+                  <br />
+                  サイバー技術開発・導入支援
+                  <br />
+                  心理学コンサルティング
+                </dd>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Mission, Vision, Values */}
+      <section class="py-20 lg:py-32 border-b border-border bg-muted/30">
+        <div class="container mx-auto px-4 lg:px-8">
+          <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
+              <div class="text-center">
+                <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-accent/10 mb-6">
+                  <Target className="w-8 h-8 text-accent" />
+                </div>
+                <h3 class="text-xl font-serif font-light mb-4 tracking-tight">ミッション</h3>
+                <p class="text-muted-foreground leading-relaxed text-pretty">意識と無意識の境界を探求し、人と組織の潜在的な可能性を解放する</p>
+              </div>
+              <div class="text-center">
+                <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-accent/10 mb-6">
+                  <Eye className="w-8 h-8 text-accent" />
+                </div>
+                <h3 class="text-xl font-serif font-light mb-4 tracking-tight">ビジョン</h3>
+                <p class="text-muted-foreground leading-relaxed text-pretty">フィクション、技術、心理学の融合により、新しい現実を創造する</p>
+              </div>
+              <div class="text-center">
+                <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-accent/10 mb-6">
+                  <Lightbulb className="w-8 h-8 text-accent" />
+                </div>
+                <h3 class="text-xl font-serif font-light mb-4 tracking-tight">バリュー</h3>
+                <p class="text-muted-foreground leading-relaxed text-pretty">創造性、革新性、洞察力を大切にし、持続可能な変革を実現する</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Philosophy */}
+      <section class="py-20 lg:py-32">
+        <div class="container mx-auto px-4 lg:px-8">
+          <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl lg:text-4xl font-serif font-light mb-12 tracking-tight text-center">私たちの哲学</h2>
+            <div class="prose prose-lg max-w-none">
+              <p class="text-muted-foreground leading-relaxed mb-6">
+                「うたたね」と「まどろみ」は、意識と無意識の境界にある状態です。この曖昧な領域こそが、創造性と革新が生まれる場所だと私たちは考えています。
+              </p>
+              <p class="text-muted-foreground leading-relaxed mb-6">
+                フィクションは、まだ見ぬ未来を描く力を持っています。サイバー技術は、その未来を現実のものとする手段を提供します。そして心理学は、人々がその変化を受け入れ、成長するための道筋を示します。
+              </p>
+              <p class="text-muted-foreground leading-relaxed">
+                私たちは、これら3つの領域を統合することで、従来の枠組みを超えた価値を創造します。意識的な戦略と無意識的な洞察を融合させ、組織と個人の真の変革を実現します。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <Footer />
+  </div>
+</MainLayout>

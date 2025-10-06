@@ -1,0 +1,158 @@
+---
+import { Header } from "@/components/header";
+import { BookOpen, Cpu, Users } from "lucide-react";
+import Footer from "@/components/footer.astro";
+import MainLayout from "@/layouts/main.astro";
+---
+
+<MainLayout
+  content={{
+    title: "事業内容 | 株式会社うたたねとまどろみ",
+  }}
+>
+  <div class="min-h-screen flex flex-col">
+    <Header />
+
+    <main class="flex-1 pt-16 lg:pt-20">
+      {/* Hero Section */}
+      <section class="py-20 lg:py-32 border-b border-border">
+        <div class="container mx-auto px-4 lg:px-8">
+          <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-4xl lg:text-6xl font-serif font-light mb-6 tracking-tight text-balance">事業内容</h1>
+            <p class="text-lg lg:text-xl text-muted-foreground leading-relaxed text-pretty">
+              フィクション、サイバー技術、組織心理学という
+              <br class="hidden md:block" />
+              3つの領域を融合し、新しい価値を創造します
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Fiction Section */}
+      <section id="fiction" class="py-20 lg:py-32 border-b border-border">
+        <div class="container mx-auto px-4 lg:px-8">
+          <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+              <div>
+                <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-accent/10 mb-6">
+                  <BookOpen className="w-8 h-8 text-accent" />
+                </div>
+                <h2 class="text-3xl lg:text-4xl font-serif font-light mb-6 tracking-tight">フィクション</h2>
+                <p class="text-muted-foreground leading-relaxed mb-6">
+                  物語の力を活用し、組織や個人の潜在的な可能性を引き出します。シナリオプランニング、ナラティブデザイン、ストーリーテリングを通じて、未来を描き、変革を促進します。
+                </p>
+                <ul class="space-y-3 text-muted-foreground">
+                  <li class="flex items-start gap-3">
+                    <span class="text-accent mt-1">•</span>
+                    <span>組織変革のためのナラティブデザイン</span>
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <span class="text-accent mt-1">•</span>
+                    <span>未来シナリオの構築とプランニング</span>
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <span class="text-accent mt-1">•</span>
+                    <span>ブランドストーリーの創造と展開</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="relative aspect-[4/3] bg-muted rounded-lg overflow-hidden">
+                <img src="/abstract-storytelling-narrative-design.jpg" alt="フィクション事業" class="w-full h-full object-cover" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Cyber Technology Section */}
+      <section id="cyber" class="py-20 lg:py-32 border-b border-border bg-muted/30">
+        <div class="container mx-auto px-4 lg:px-8">
+          <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+              <div class="order-2 lg:order-1 relative aspect-[4/3] bg-muted rounded-lg overflow-hidden">
+                <img src="/cyber-technology-digital-network.jpg" alt="サイバー技術事業" class="w-full h-full object-cover" />
+              </div>
+              <div class="order-1 lg:order-2">
+                <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-accent/10 mb-6">
+                  <Cpu className="w-8 h-8 text-accent" />
+                </div>
+                <h2 class="text-3xl lg:text-4xl font-serif font-light mb-6 tracking-tight">サイバー技術</h2>
+                <p class="text-muted-foreground leading-relaxed mb-6">
+                  最先端のデジタル技術を駆使し、組織のDX推進をサポートします。AI、データ分析、セキュリティ対策など、包括的なソリューションを提供します。
+                </p>
+                <ul class="space-y-3 text-muted-foreground">
+                  <li class="flex items-start gap-3">
+                    <span class="text-accent mt-1">•</span>
+                    <span>AI・機械学習を活用した業務最適化</span>
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <span class="text-accent mt-1">•</span>
+                    <span>データ分析とビジネスインテリジェンス</span>
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <span class="text-accent mt-1">•</span>
+                    <span>サイバーセキュリティコンサルティング</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Organizational Psychology Section */}
+      <section id="psychology" class="py-20 lg:py-32">
+        <div class="container mx-auto px-4 lg:px-8">
+          <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+              <div>
+                <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-accent/10 mb-6">
+                  <Users className="w-8 h-8 text-accent" />
+                </div>
+                <h2 class="text-3xl lg:text-4xl font-serif font-light mb-6 tracking-tight">心理学</h2>
+                <p class="text-muted-foreground leading-relaxed mb-6">
+                  人と組織の心理を深く理解し、持続可能な成長を実現します。組織開発、リーダーシップ育成、チームビルディングなど、人的資本の最大化を支援します。
+                </p>
+                <ul class="space-y-3 text-muted-foreground">
+                  <li class="flex items-start gap-3">
+                    <span class="text-accent mt-1">•</span>
+                    <span>組織診断と組織開発コンサルティング</span>
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <span class="text-accent mt-1">•</span>
+                    <span>リーダーシップ開発プログラム</span>
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <span class="text-accent mt-1">•</span>
+                    <span>チームパフォーマンス向上支援</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="relative aspect-[4/3] bg-muted rounded-lg overflow-hidden">
+                <img src="/organizational-psychology-team-collaboration.jpg" alt="組織心理学事業" class="w-full h-full object-cover" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Integration Section */}
+      <section class="py-20 lg:py-32 bg-primary text-primary-foreground">
+        <div class="container mx-auto px-4 lg:px-8">
+          <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl lg:text-5xl font-serif font-light mb-6 tracking-tight text-balance">3つの領域の融合</h2>
+            <p class="text-lg lg:text-xl leading-relaxed opacity-90 text-pretty">
+              フィクションの創造力、サイバー技術の革新性、組織心理学の洞察力。
+              <br class="hidden md:block" />
+              これらを統合することで、従来にない価値を生み出します。
+              <br class="hidden md:block" />
+              意識と無意識の境界で、新しい可能性を探求します。
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <Footer />
+  </div>
+</MainLayout>
